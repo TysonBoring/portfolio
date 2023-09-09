@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Welcome to My Web Development Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello there, I'm Tyson Boring, and I'm thrilled to introduce you to my meticulously crafted web development portfolio. This is not just a collection of projects; it's a reflection of my deep passion for clean, organized code and my unwavering commitment to delivering seamless user experiences.
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+I'm a Full-Stack developer with a strong skill set that includes HTML, CSS, JavaScript, and with specialization in React, TypeScript, and Tailwind UI. My journey in web development has been guided by industry-standard practices, and every line of code in this portfolio reflects that dedication.
 
-### `npm start`
+## Explore My Work
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dive into my projects, which encompass responsive websites and full-stack applications. Each project has been meticulously designed and developed with precision. Whether you're viewing them on a desktop, tablet, or mobile device, my responsive design ensures a seamless and engaging experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Interact with Projects
 
-### `npm test`
+Feel free to explore my projects, interact with them, and even delve into the code. It's a glimpse into my skills and expertise in action. I'm constantly pushing the boundaries of web development and what I learn day to day, and this portfolio serves as a living testament to my commitment to excellence.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Connect with Me
 
-### `npm run build`
+If you have any questions, feedback, or opportunities you'd like to discuss, don't hesitate to get in touch. You can reach out to me through the contact form in this Web Application / Site, and I'd be delighted to connect with you.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Thank you for visiting, and I'm excited to share my passion for web development with you.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Tyson Boring

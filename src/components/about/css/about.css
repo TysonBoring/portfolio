@@ -1,0 +1,16 @@
+.image-slide-in {
+    background-position: -100%; /* Start position on the left outside of the section */
+    animation: slideIn 3s linear infinite; /* Use 'infinite' for continuous animation */
+  
+    /* Add other styles if needed */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      background-position: -100%; /* Start position on the left outside of the section */
+    }
+    100% {
+      background-position: 100%; /* Final position on the right outside of the section */
+    }
+  }
+  

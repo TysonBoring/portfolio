@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
         <p className="text-lg md:text-2xl lg:text-3xl mt-2 text-gray-400 transition duration-300 ease-in-out transform hover:scale-105">Frontend Web Developer</p> {/* Add subtitle here */}
         <p className="text-lg md:text-2xl lg:text-3xl mt-4 mr-4 text-white transition duration-300 ease-in-out hover:text-blue-500">
-          Get in touch to inquire me for development of a custom web application to suit your specific needs.
+        Don't hesitate to <span className="text-indigo-500 hover:font-bold"><a href="#contact">contact me</a></span> for quick and dependable communication as we build a unique web app just for you. I'm here to answer your questions fast and make sure the whole development process is easy for you.
         </p>
 
         <nav className="mt-24">

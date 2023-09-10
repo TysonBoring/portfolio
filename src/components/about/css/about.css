@@ -13,4 +13,22 @@
       background-position: 100%; /* Final position on the right outside of the section */
     }
   }
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 4s steps(40) 2s forwards;
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
   

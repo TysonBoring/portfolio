@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 const skillsList = [
   'React',
   'TypeScript',
-  'HTML / CSS / JS',
-  'Git Tooling',
   'Tailwind-CSS',
-  'Responsive UI/UX Design',
-  'Database Interactions',
-  'UI Interactivity',
+  'Responsive Design',
+  'Detail Orientated',
+  'CRUD Understanding',
+  'Html / CSS / JS',
+  'Python3',
 ];
 
 const Skills = () => {

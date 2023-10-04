@@ -2,25 +2,11 @@ import React from 'react';
 
 const projectsData = [
   {
-    title: 'act-on.com made responsive & interactive.',
-    description: 'A local start-up\'s website landing page made more responsive and with added interactivity.',
-    livePreviewLink: 'https://example.com/live-preview',
-    githubLink: 'https://github.com/yourusername/project1',
-    imageUrl: 'url-to-your-image1.jpg',
-  },
-  {
-    title: 'Discord Web App Clone',
-    description: 'A full-stack implementation of Discord\'s functionality in my own project, utilizing TailwindCSS, React, and shadcn-UI for my UI/UX.',
-    livePreviewLink: 'https://example.com/live-preview2',
-    githubLink: 'https://github.com/yourusername/project2',
-    imageUrl: 'url-to-your-image2.jpg',
-  },
-  {
-    title: 'TysonBdev.com',
-    description: 'My personal portfolio site, yeah! The one you\'re on right now!',
-    livePreviewLink: 'https://example.com/live-preview4',
-    githubLink: 'https://github.com/yourusername/project4',
-    imageUrl: 'url-to-your-image3.jpg',
+      title: 'tysonbdev.vercel.app',
+      description: 'My personal portfolio site, yeah! The one you\'re on right now!',
+      livePreviewLink: 'https://tysonbdev.vercel.app/',
+      githubLink: 'https://github.com/TysonBoring/portfolio/',
+      imageUrl: 'personalSite.png',
   },
   // Add more projects as needed
 ];

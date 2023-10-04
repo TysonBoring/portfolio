@@ -63,9 +63,11 @@ const Hero = () => {
           </ul>
         </nav>
       </div>
+      <div className="flex items-center justify-center">
       <div className="arrow-container">
         <FontAwesomeIcon icon={faArrowDown} size="2x" className="arrow-icon" />
       </div>
+    </div>
     </div>
   );
 };

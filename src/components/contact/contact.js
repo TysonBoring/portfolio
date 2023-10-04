@@ -10,11 +10,12 @@ const Contact = () => {
   const [formErrors, setFormErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [formResponse, setFormResponse] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setFormErrors({ ...formErrors, [name]: '' }); // Clear any validation errors when typing
+    setFormErrors({ ...formErrors, [name]: '' });
   };
 
   const validateForm = () => {
@@ -38,45 +39,38 @@ const Contact = () => {
     const errors = validateForm();
 
     if (Object.keys(errors).length === 0) {
-      // Show loading state
       setIsLoading(true);
 
       try {
-        // Simulate an asynchronous form submission, replace with your actual submission logic
-        await submitFormAsync(formData);
-
-        // Handle success
-        setFormSubmitted(true);
-        setIsLoading(false);
-        // Clear the form
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
+        const response = await fetch('http://localhost:5000/api/submit-contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
         });
+
+        if (response.ok) {
+          const responseData = await response.json();
+          setFormResponse(responseData);
+          setFormSubmitted(true);
+          setIsLoading(false);
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+        } else {
+          setIsLoading(false);
+          console.error('API response error:', response.statusText);
+        }
       } catch (error) {
-        // Handle submission error
         setIsLoading(false);
-        console.error('Submission error:', error);
+        console.error('Network error:', error);
       }
     } else {
       setFormErrors(errors);
     }
-  };
-
-  const submitFormAsync = async (formData) => {
-    // Simulate an API request or email sending here
-    // Replace this with your actual asynchronous submission logic
-    // Example: Sending a POST request to an API
-    // const response = await fetch('your-api-endpoint', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(formData),
-    // });
-
-    // Handle the response or any errors here
   };
 
   return (
@@ -87,7 +81,10 @@ const Contact = () => {
           Have a question or want to work together? Fill out the form below, and I'll get back to you soon.
         </p>
         {formSubmitted ? (
-          <p className="text-green-500 text-xl mb-4">Thank you for your message! I'll get back to you soon.</p>
+          <div>
+            <p className="text-green-500 text-xl mb-4">Thank you for your message, {formResponse.name}!</p>
+            <p className="text-green-500 text-xl mb-4">{formResponse.message}</p>
+          </div>
         ) : (
           <form className="max-w-md mx-auto mt-12" onSubmit={handleSubmit}>
             <div className="mb-6">

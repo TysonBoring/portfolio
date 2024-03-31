@@ -35,7 +35,7 @@ const Hero = () => {
           <span className="text-indigo-500 hover:font-bold">
             <a href="#contact">contact me</a>
           </span>{' '}
-          for quick and dependable communication as we build a unique web app just for you. I'm here to answer your questions fast and make sure the whole development process is easy for you.
+          I'm eager to actively collaborate as part of your development team. Through my portfolio, you'll see projects that demonstrate the skills I can bring to the table. Together, we'll ensure goals are achieved & exceeded.
         </p>
 
         <nav className="mt-24">

@@ -2,13 +2,12 @@ import React from 'react';
 
 const projectsData = [
   {
-      title: 'tysonbdev.vercel.app',
-      description: 'My personal portfolio site, yeah! The one you\'re on right now!',
-      livePreviewLink: 'https://tysonbdev.vercel.app/',
-      githubLink: 'https://github.com/TysonBoring/portfolio/',
-      imageUrl: 'personalSite.png',
+    title: 'tysonbdev.vercel.app',
+    description: 'My personal portfolio site, yeah! The one you\'re on right now!',
+    livePreviewLink: 'https://tysonbdev.vercel.app/',
+    githubLink: 'https://github.com/TysonBoring/portfolio/',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6PHa7tOwIQccoN7H6uof7xXWmLzTw1ENJA&usqp=CAU',
   },
-  // Add more projects as needed
 ];
 
 const Projects = () => {
@@ -21,13 +20,13 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-100 p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:scale-105 hover:bg-gray-200 hover:bg-opacity-90" // Added hover:bg-opacity-80
+              className="bg-gray-100 p-6 rounded-lg shadow-lg h-full flex flex-col justify-between transition-transform transform hover:shadow-xl"
             >
               <div>
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-48 object-cover mb-4 cursor-pointer"
+                  className="w-full h-48 object-cover mb-4 cursor-pointer hover:opacity-75 transition-opacity"
                   onClick={() => window.open(project.livePreviewLink, '_blank')}
                 />
                 <h3 className="text-xl text-black font-semibold mb-2">{project.title}</h3>

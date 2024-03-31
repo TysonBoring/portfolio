@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion'; 
 
 const skillsList = [
-  'React',
-  'TypeScript',
-  'Tailwind-CSS',
-  'Responsive Design',
-  'Detail Orientated',
-  'CRUD Understanding',
-  'Html / CSS / JS',
-  'Python3',
+  { name: 'React', symbol: '⚛️' },
+  { name: 'JavaScript', symbol: '🚀' },
+  { name: 'Java', symbol: '☕' },
+  { name: 'MySQL', symbol: '🗃️' },
+  { name: 'HTML & CSS', symbol: '🌐' },
+  { name: 'Git', symbol: '🔗' },
+  { name: 'Tailwind', symbol: '🎨' },
+  { name: 'CI/CD Automation', symbol: '🤖' }
 ];
 
 const Skills = () => {
@@ -26,21 +26,21 @@ const Skills = () => {
           {skillsList.map((skill, index) => (
             <motion.div
               key={index}
-              className={`relative p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-2 ${
-                hoveredSkill === index
-                  ? 'bg-gray-900 border-indigo-500 border-opacity-50 text-indigo-500'
-                  : 'bg-black'
+              className={`relative p-4 rounded-lg shadow-md ${
+                hoveredSkill === index ? 'bg-gray-900 text-indigo-500' : 'bg-black'
               }`}
-              whileHover={{ scale: 1.05 }} // Add scaling animation on hover
-              onMouseEnter={() => setHoveredSkill(index)}
-              onMouseLeave={() => setHoveredSkill(null)}
+              style={{
+                border: hoveredSkill === index ? '2px solid rgba(79, 70, 229, 0.5)' : 'none',
+                transition: 'background-color 0.3s, border-color 0.3s, color 0.3s',
+              }}
+              whileHover={{ scale: 1.05 }}
+              onHoverStart={() => setHoveredSkill(index)}
+              onHoverEnd={() => setHoveredSkill(null)}
             >
-              <p className={`text-lg md:text-xl text-white hover:text-indigo-500 ${
-                hoveredSkill === index ? 'font-semibold' : ''
-              }`}>
-                {skill}
+              <p className={`text-lg md:text-xl text-white ${hoveredSkill === index ? 'font-semibold' : ''}`}>
+                {skill.symbol} {skill.name}
               </p>
-            </motion.div>
+            </motion.div>          
           ))}
         </div>
       </div>

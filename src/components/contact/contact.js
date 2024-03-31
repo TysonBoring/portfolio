@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: '',
     email: '',
     message: '',
-  });
+  };
 
+  const [formData, setFormData] = useState(initialFormData);
   const [formErrors, setFormErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -55,11 +56,7 @@ const Contact = () => {
           setFormResponse(responseData);
           setFormSubmitted(true);
           setIsLoading(false);
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
+          setFormData(initialFormData);
         } else {
           setIsLoading(false);
           console.error('API response error:', response.statusText);

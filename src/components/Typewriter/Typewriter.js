@@ -3,14 +3,14 @@ import './Typewriter.css'; // Import your CSS file for styling (create this file
 
 const Typewriter = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [cursorVisible, setCursorVisible] = useState(true);
 
   useEffect(() => {
-    let currentIndex = 0;
     const interval = setInterval(() => {
       if (currentIndex < text.length) {
         setDisplayedText((prevText) => prevText + text[currentIndex]);
-        currentIndex++;
+        setCurrentIndex((prevIndex) => prevIndex + 1);
       } else {
         clearInterval(interval);
         setCursorVisible(false);
@@ -18,7 +18,7 @@ const Typewriter = ({ text }) => {
     }, 75); // Adjust the typing speed here
 
     return () => clearInterval(interval);
-  }, [text]);
+  }, [currentIndex, text]);
 
   return (
     <div className="typewriter-container">

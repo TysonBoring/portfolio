@@ -43,7 +43,7 @@ const Contact = () => {
       setIsLoading(true);
 
       try {
-        const response = await fetch('http://localhost:5000/api/submit-contact', {
+        const response = await fetch('https://us-west1-emailbackend-419723.cloudfunctions.net/SendEmailOnFormSubmit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -54,7 +54,7 @@ const Contact = () => {
         if (response.ok) {
           const responseData = await response.json();
           setFormResponse(responseData);
-          setFormSubmitted(true);
+          setFormSubmitted(true); // Update formSubmitted state here
           setIsLoading(false);
           setFormData(initialFormData);
         } else {

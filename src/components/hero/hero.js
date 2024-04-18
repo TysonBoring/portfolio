@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'; // Import the arrow icon
+import { faArrowDown, faFilePdf } from '@fortawesome/free-solid-svg-icons'; // Import the arrow and file icons
 
 const Hero = () => {
+  const [showResume, setShowResume] = useState(false);
+
+  const handleViewResume = () => {
+    setShowResume(!showResume); // Toggle resume visibility
+    // Add logic for resume animation here
+  };
+
   return (
     <div className="bg-black text-white py-16 text-center relative">
+      <button 
+        className="absolute top-4 left-4 bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out"
+        onClick={handleViewResume}
+      >
+        <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+        View Resume
+      </button>
       <div className="relative bg-black text-white py-16 text-center">
         {/* Wrapper div for icons */}
         <div className="absolute top-4 right-4 flex">
@@ -23,6 +37,14 @@ const Hero = () => {
             <FontAwesomeIcon icon={faCodepen} size="2x" />
           </a>
         </div>
+        {/* Rest of your Hero component */}
+        {/* Add resume animation logic and rendering */}
+        {showResume && (
+          // Add your animated resume component here
+          <div className="animated-resume">
+            {/* Your animated resume content */}
+          </div>
+        )}
         {/* Rest of your Hero component */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-12 font-bold leading-tight">
           <span className="text-rotate">Tyson Boring</span>

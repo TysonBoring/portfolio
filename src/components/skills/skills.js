@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 const skillsList = [
   { name: 'React', symbol: '⚛️' },
-  { name: 'JavaScript', symbol: '🚀' },
+  { name: 'JavaScript', symbol: '🌟' },
   { name: 'Java', symbol: '☕' },
-  { name: 'MySQL', symbol: '🗃️' },
-  { name: 'HTML & CSS', symbol: '🌐' },
+  { name: 'MySQL', symbol: '🔍' },
+  { name: 'HTML & CSS', symbol: '🎨' },
   { name: 'Git', symbol: '🔗' },
-  { name: 'Tailwind', symbol: '🎨' },
-  { name: 'CI/CD Automation', symbol: '🤖' }
+  { name: 'Tailwind', symbol: '🌀' },
+  { name: 'Docker', symbol: '🐳' }
 ];
 
 const Skills = () => {
